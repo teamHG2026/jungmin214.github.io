@@ -24,7 +24,7 @@ header 영역 - 로고, 메인메뉴
     top: 0;
     left: 0;
     width: 100%;
-    height: 36%;
+    height: 342px;
     /* background-color: rgb(97, 61, 96); */
     z-index: 10000;
 }
@@ -32,8 +32,8 @@ header 영역 - 로고, 메인메뉴
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 5%;
-    left: 12.1%;
+    bottom: 17px;
+    left: 190px;
     padding-left: 2%;
     row-gap: 16px;
     text-align: right;
@@ -61,7 +61,7 @@ header 영역 - 로고, 메인메뉴
 #title {
     position: absolute;
     top: 0;
-    left: 23%;
+    left: 400px;
     font-size: 30px;
     color: rgb(122, 122, 122);
     /* background-color: aquamarine; */
@@ -72,8 +72,8 @@ header 영역 - 로고, 메인메뉴
     font-size: 45px;
     line-height: 160%;
     position: absolute;
-    top: 15%;
-    right: 10%;
+    top: 140px;
+    right: 100px;
     padding-left: 2%;
     /* background-color: rgb(74, 57, 35); */
 }
@@ -85,8 +85,8 @@ header 영역 - 로고, 메인메뉴
     font-size: 20px;
     line-height: 160%;
     position: absolute;
-    top: 28%;
-    right: 10%;
+    top: 265px;
+    right: 100px;
     padding-left: 2%;
     /* background-color: rgb(74, 57, 35); */
 }
@@ -103,8 +103,8 @@ header 영역 - 로고, 메인메뉴
     font-size: 18px;
     line-height: 160%;
     position: absolute;
-    top: 31.8%;
-    right: 10%;
+    top: 300px;
+    right: 100px;
     padding-left: 2%;
     /* background-color: rgb(74, 57, 35); */
 }
@@ -112,8 +112,8 @@ header 영역 - 로고, 메인메뉴
 #P_content03 {
     position: absolute;
     font-size: 30px;
-    top: 45.5%;
-    left: 34%;
+    top: 435px;
+    left: 500px;
     color: white;
     /* background-color: blueviolet; */
 
@@ -127,14 +127,14 @@ Line 영역 - 선
     position: absolute;
     border-top: 1.5px solid rgb(78, 78, 78);
     width: 100%;
-    top: 15%;
+    top: 145px;
     left: 0;
 }
 
 #line02 {
     position: absolute;
     border-right: 1.5px solid rgb(78, 78, 78);
-    width: 21%;
+    width: 360px;
     height: 100%;
     top: 0;
 }
@@ -152,6 +152,7 @@ Line 영역 - 선
     height: 40%;
     bottom: 6%;
     left: 35.2%;
+    z-index: -10000;
 
     /* background-color: antiquewhite; */
 }
@@ -159,8 +160,8 @@ Line 영역 - 선
 #picture02 {
     display: flex;
     position: absolute;
-    top: 48.5%;
-    left: 29.5%;
+    top: 463px;
+    left: 435px;
 
     /* background-color: antiquewhite; */
 }
@@ -168,8 +169,8 @@ Line 영역 - 선
 #picture03 {
     display: flex;
     position: absolute;
-    top: 56%;
-    left: 29.5%;
+    top: 535px;
+    left: 435px;
 
     /* background-color: antiquewhite; */
 }
@@ -177,8 +178,8 @@ Line 영역 - 선
 #picture04 {
     display: flex;
     position: absolute;
-    top: 63%;
-    left: 29.5%;
+    top: 604px;
+    left: 435px;
 
     /* background-color: antiquewhite; */
 }
@@ -186,8 +187,8 @@ Line 영역 - 선
 #picture05 {
     display: flex;
     position: absolute;
-    top: 70.5%;
-    left: 29.5%;
+    top: 675px;
+    left: 435px;
 
     /* background-color: antiquewhite; */
 }
@@ -195,8 +196,8 @@ Line 영역 - 선
 #picture06 {
     display: flex;
     position: absolute;
-    top: 78%;
-    left: 29.5%;
+    top: 743px;
+    left: 435px;
 
     /* background-color: antiquewhite; */
 }
@@ -214,4 +215,141 @@ Line 영역 - 선
 
     margin: 0 8px;
     /* border: solid 1px #000; */
+}
+
+
+@media screen and (max-width: 960px) {
+    #line02 {
+        width: 200px;
+    }
+
+    #title {
+        font-size: 28px;
+        left: 230px;
+        top: 5px;
+    }
+
+    #navmenu {
+        bottom: 5%;
+        left: 55px;
+        padding-left: 2%;
+    }
+
+    #Pro {
+        right: 55px;
+    }
+
+    #P_content01 {
+        right: 55px;
+    }
+
+    #P_content02 {
+        right: 55px;
+    }
+
+    #P_content03 {
+        left: 340px;
+    }
+
+    #picture01 {
+        height: 30%;
+    }
+
+    #picture02 {
+        left: 265px;
+    }
+
+    #picture03 {
+        left: 265px;
+    }
+
+    #picture04 {
+        left: 265px;
+    }
+
+    #picture05 {
+        left: 265px;
+    }
+
+    #picture06 {
+        left: 265px;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    #title {
+        font-size: 25px;
+        left: 230px;
+        top: 15px;
+    }
+
+    #Pro {
+        font-size: 35px;
+        top: 170px;
+    }
+
+    #P_content01 {
+        font-size: 18px;
+    }
+
+    #P_content02 {
+        font-size: 16px;
+    }
+
+    #P_content03 {
+        font-size: 28px;
+    }
+
+    #picture01 {
+        height: 28%;
+    }
+
+    #picture02 {
+        height: 6.5%;
+        left: 260px;
+        top: 456px;
+    }
+
+    #picture03 {
+        height: 5.5%;
+        left: 264px;
+        top: 525px;
+    }
+
+    #picture04 {
+        height: 5.5%;
+        left: 264px;
+        top: 589px;
+    }
+
+    #picture05 {
+        height: 5.5%;
+        left: 264px;
+        top: 655px;
+    }
+
+    #picture06 {
+        height: 5.5%;
+        left: 264px;
+        top: 720px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+
+    #line01 {
+        top: 180px;
+        width: 40.1%;
+    }
+
+    #line02 {
+        width: 380px;
+    }
+
+
+    #title{
+        left: 21px;
+        top: 0px;
+        font-size: 25px;
+    }
 }
