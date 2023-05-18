@@ -217,6 +217,7 @@ Line 영역 - 선
     /* border: solid 1px #000; */
 }
 
+/* 일단 지워놔............
 
 @media screen and (max-width: 960px) {
     #line02 {
@@ -335,21 +336,97 @@ Line 영역 - 선
     }
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 792px) {
+    #title {
+        font-size: 25px;
+        left: 230px;
+        top: 0px;
+    }
+}
 
+@media screen and (max-width: 732px) {
+    #title {
+        font-size: 25px;
+        left: 15px;
+        top: 16px;
+    }
+}
+
+*/
+
+@media screen and (max-width: 520px) {
     #line01 {
-        top: 180px;
-        width: 40.1%;
+        top: 100px;
     }
 
     #line02 {
         width: 380px;
     }
 
-
-    #title{
-        left: 21px;
+    #title {
+        font-size: 20px;
+        left: 18px;
         top: 0px;
+    }
+
+    #navmenu {
+        bottom: 5%;
+        right: 10px;
+        padding-left: 2%;
+        text-align: left;
+    }
+
+    #Pro {
+        font-size: 29px;
+        top: 105px;
+        left: 10px;
+    }
+
+    #P_content01 {
+        font-size: 17px;
+        top: 186px;
+        left: 10px;
+    }
+
+    #P_content02 {
+        font-size: 15px;
+        top: 216px;
+        left: 10px;
+    }
+
+    #P_content03 {
         font-size: 25px;
+        top: 360px;
+        left: 90px;
+    }
+
+    #picture02 {
+        height: 6.5%;
+        left: 15px;
+        top: 375px;
+    }
+
+    #picture03 {
+        height: 5.3%;
+        left: 21px;
+        top: 435px;
+    }
+
+    #picture04 {
+        height: 5.3%;
+        left: 20px;
+        top: 495px;
+    }
+
+    #picture05 {
+        height: 5.3%;
+        left: 20px;
+        top: 555px;
+    }
+
+    #picture06 {
+        height: 5.3%;
+        left: 18px;
+        top: 660px;
     }
 }
