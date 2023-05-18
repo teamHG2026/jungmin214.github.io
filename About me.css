@@ -364,9 +364,9 @@ Line 영역 - 선
     }
 
     #title {
-        font-size: 20px;
+        font-size: 17px;
         left: 18px;
-        top: 0px;
+        top: 10px;
     }
 
     #navmenu {
@@ -403,7 +403,7 @@ Line 영역 - 선
     #picture01 {
         left: 56px;
         height: 16%;
-        bottom: 26%
+        bottom: 250px
     }
 
     #picture02 {
