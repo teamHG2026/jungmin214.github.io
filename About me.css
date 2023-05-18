@@ -370,8 +370,8 @@ Line 영역 - 선
     }
 
     #navmenu {
-        bottom: 5%;
-        right: 10px;
+        top: 160px;
+        left: 381px;
         padding-left: 2%;
         text-align: left;
     }
@@ -400,6 +400,12 @@ Line 영역 - 선
         left: 90px;
     }
 
+    #picture01 {
+        left: 56px;
+        height: 16%;
+        bottom: 26%
+    }
+
     #picture02 {
         height: 6.5%;
         left: 15px;
@@ -425,8 +431,8 @@ Line 영역 - 선
     }
 
     #picture06 {
-        height: 5.3%;
-        left: 18px;
-        top: 660px;
+        height: 5.2%;
+        left: 19px;
+        top: 612px;
     }
 }
