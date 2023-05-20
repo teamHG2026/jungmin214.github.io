@@ -122,6 +122,8 @@ Line 영역 - 선
 
 */
 
+/* 스마트폰 크기 */
+
 @media screen and (max-width: 590px) {
     #title {
         padding-top: 130px;
@@ -150,6 +152,44 @@ Line 영역 - 선
 
     #navmenu a {
         font-size: 18px;
+    }
+
+    #picture {
+        height: 20%;
+        bottom: 150px;
+    }
+}
+
+/* 작!은! 스마트폰 크기 */
+
+@media screen and (max-width: 400px) {
+    #title {
+        padding-top: 146px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    #Lee {
+        font-size: 14px;
+        margin-left: 153px;
+    }
+
+    #line01 {
+        width: 245px;
+    }
+
+    #line02 {
+        width: 380px;
+    }
+
+    #navmenu {
+        right: 130px;
+        bottom: 100px;
+
+    }
+
+    #navmenu a {
+        font-size: 15px;
     }
 
     #picture {
