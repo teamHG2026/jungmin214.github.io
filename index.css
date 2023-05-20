@@ -20,7 +20,6 @@ header 영역 - 로고, 메인메뉴
     width: 100%;
     height: 342px;
     /* background-color: rgb(127, 87, 87); */
-    z-index: 10000;
 }
 #navmenu {
     display: flex;
@@ -122,7 +121,7 @@ Line 영역 - 선
 
 */
 
-/* 스마트폰 크기 */
+/* 스마트폰 크기
 
 @media screen and (max-width: 590px) {
     #title {
@@ -160,7 +159,9 @@ Line 영역 - 선
     }
 }
 
-/* 작!은! 스마트폰 크기 */
+*/
+
+/* 작!은! 스마트폰 크기 
 
 @media screen and (max-width: 400px) {
     #title {
@@ -196,5 +197,54 @@ Line 영역 - 선
     #picture {
         height: 20%;
         bottom: 150px;
+    }
+}
+
+*/
+
+@media screen and (max-width: 590px) {
+    #title {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        width: 1005;
+        left: 0;
+        font-size: 16px;
+        /* background-color: blueviolet; */
+    }
+    
+    
+    #Lee {
+        font-size: 19px;
+        margin-left: 60%; 
+    }
+
+    
+    #line01 {
+        top: 85px;
+        width: 100%;
+    }
+
+    #line02 {
+        width: 10%;
+    }
+
+    #navmenu {
+        width: auto;
+        text-align: left;
+        left: 75px;
+        bottom: 100px;
+        /* background-color: blueviolet; */
+    }
+
+    #navmenu a {
+        font-size: 18px;
+    }
+
+    #picture {
+        height: 20%;
+        bottom: 150px;
+        right: 0;
     }
 }
