@@ -216,8 +216,8 @@ Line 영역 - 선
     
     
     #Lee {
-        font-size: 19px;
-        margin-left: 60%; 
+        font-size: 18px;
+        margin-left: 61%; 
     }
 
     
@@ -228,13 +228,14 @@ Line 영역 - 선
 
     #line02 {
         width: 10%;
+        height: 400px;
     }
 
     #navmenu {
         width: auto;
         text-align: left;
         left: 75px;
-        bottom: 100px;
+        bottom: 80px;
         /* background-color: blueviolet; */
     }
 
