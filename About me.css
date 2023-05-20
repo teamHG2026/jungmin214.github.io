@@ -151,7 +151,7 @@ Line 영역 - 선
     width: 64.8%;
     height: 40%;
     bottom: 6%;
-    left: 35.2%;
+    right: 0;
     z-index: -10000;
 
     /* background-color: antiquewhite; */
@@ -354,13 +354,13 @@ Line 영역 - 선
 
 */
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 590px) {
     #line01 {
         top: 100px;
     }
 
     #line02 {
-        width: 380px;
+        width: 375px;
     }
 
     #title {
@@ -371,7 +371,7 @@ Line 영역 - 선
 
     #navmenu {
         top: 160px;
-        left: 381px;
+        left: 375px;
         padding-left: 2%;
         text-align: left;
     }
@@ -403,7 +403,7 @@ Line 영역 - 선
     #picture01 {
         left: 56px;
         height: 16%;
-        bottom: 250px
+        bottom: 100px
     }
 
     #picture02 {

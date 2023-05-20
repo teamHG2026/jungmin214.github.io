@@ -23,7 +23,7 @@ header 영역 - 로고, 메인메뉴
     top: 0;
     left: 0;
     width: 100%;
-    height: 32%;
+    height: 305px;
     /* background-color: rgb(127, 87, 87); */
     z-index: 10000;
 }
@@ -31,9 +31,8 @@ header 영역 - 로고, 메인메뉴
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 22%;
-    right: 8%;
-    padding-right: 1%;
+    top: 130px;
+    right: 140px;
     row-gap: 15px;
     text-align: right;
     /* background-color: rgb(0, 0, 0); */
@@ -66,8 +65,8 @@ header 영역 - 로고, 메인메뉴
     position: fixed;
     font-size: 90px;
     color: white;
-    top: 3%;
-    left: 35%;
+    top: 20px;
+    left: 580px;
     text-align: center;
     /* background-color: aquamarine; */
 }
@@ -79,8 +78,8 @@ Line 영역 - 선
 #line01 {
     position: fixed;
     border-right: 1.5px solid rgb(78, 78, 78);
-    width: 92.7%;
-    height: 33%;
+    width: 1570px;
+    height: 312px;
     top: 0;
 }
 
@@ -94,8 +93,8 @@ Line 영역 - 선
     color: white;
     width: 440px;
     height: 440px;
-    top: 140%;
-    left: 19%;
+    top: 1327px;
+    left: 321px;
 
     /* background-color: antiquewhite; */
 
@@ -118,11 +117,11 @@ Line 영역 - 선
 
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0,0);
+    background-color: rgba(0, 0, 0, 0);
     width: 440px;
     height: 440px;
-    top: 140%;
-    left: 19%;
+    top: 1327px;
+    left: 321px;
     border-radius: 30px;
 }
 
@@ -150,8 +149,8 @@ Line 영역 - 선
     color: white;
     width: 440px;
     height: 440px;
-    top: 177%;
-    left: 54%;
+    top: 1678px;
+    right: 338px;
 
     /* background-color: rgb(120, 150, 130); */
 
@@ -175,11 +174,11 @@ Line 영역 - 선
 
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0,0);
+    background-color: rgb(0, 0, 0, 0);
     width: 440px;
     height: 440px;
-    top: 177%;
-    left: 54%;
+    top: 1678px;
+    right: 338px;
     border-radius: 30px;
 }
 
@@ -208,8 +207,8 @@ Line 영역 - 선
     color: white;
     width: 440px;
     height: 440px;
-    top: 214%;
-    left: 19%;
+    top: 2028px;
+    left: 321px;
 
     /* background-color: rgb(235, 215, 250); */
 
@@ -232,11 +231,11 @@ Line 영역 - 선
 
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0,0);
+    background-color: rgba(0, 0, 0, 0);
     width: 440px;
     height: 440px;
-    top: 214%;
-    left: 19%;
+    top: 2028px;
+    left: 321px;
     border-radius: 30px;
 }
 
@@ -264,8 +263,8 @@ Line 영역 - 선
     color: white;
     width: 440px;
     height: 440px;
-    top: 251%;
-    left: 54%;
+    top: 2379px;
+    right: 338px;
 
     /* background-color: rgb(150, 150, 120); */
 
@@ -289,11 +288,11 @@ Line 영역 - 선
 
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0,0);
+    background-color: rgba(0, 0, 0, 0);
     width: 440px;
     height: 440px;
-    top: 251%;
-    left: 54%;
+    top: 2379px;
+    right: 338px;
     border-radius: 30px;
 }
 
@@ -339,9 +338,135 @@ Line 영역 - 선
     align-items: center;
     width: 200px;
     height: 70px;
-    top: 390%;
-    left: 44%;
+    top: 3680px;
+    left: 740px;
     /* background-color: aqua; */
     border: solid 3px white;
     border-radius: 100px;
+}
+
+@media screen and (max-width: 590px) {
+    body {
+        height: 3800px;
+    }
+
+    #title {
+    font-size: 46px;
+    top: 20px;
+    left: 45px;
+    }
+
+    #line01 {
+        width: 440px;
+        height: 260px;
+    }
+
+    #navmenu {
+        right: 48px;
+    }
+    
+
+    #navmenu a {
+        font-size: 18px;
+    }
+
+    #picture01 {
+        width: 290px;
+        height: 290px;
+        top: 1000px;
+        left: 30px;
+    }
+
+    #picture01 p {
+        font-size: 10.5px;
+    }
+
+    #picture01_1 {
+        width: 290px;
+        height: 290px;
+        top: 1000px;
+        left: 30px;
+    }
+
+    .text_001 {
+        font-size: 15px;
+    }
+
+    #picture02 {
+        width: 290px;
+        height: 290px;
+        top: 1450px;
+        left: 30px;
+    }
+
+    #picture02 p {
+        font-size: 10.5px;
+        text-align: left;
+    }
+
+    #picture02_2 {
+        width: 290px;
+        height: 290px;
+        top: 1450px;
+        left: 30px;
+    }
+
+    .text_002 {
+        font-size: 15px;
+    }
+
+    #picture03 {
+        width: 290px;
+        height: 290px;
+        top: 1900px;
+        left: 30px;
+    }
+
+    #picture03 p {
+        font-size: 10.5px;
+    }
+
+    #picture03_3 {
+        width: 290px;
+        height: 290px;
+        top: 1900px;
+        left: 30px;
+    }
+
+    .text_003 {
+        font-size: 15px;
+    }
+
+    #picture04 {
+        width: 290px;
+        height: 290px;
+        top: 2350px;
+        left: 30px;
+    }
+
+    #picture04 p {
+        font-size: 10.5px;
+        text-align: left;
+    }
+
+    #picture04_4 {
+        width: 290px;
+        height: 290px;
+        top: 2350px;
+        left: 30px;
+    }
+
+    .text_004 {
+        font-size: 15px;
+    }
+
+    .button {
+        width: 170px;
+        height: 45px;
+        top: 3300px;
+        left: 90px;
+        /* background-color: aqua; */
+        border: solid 3px white;
+        border-radius: 100px;
+    }
 }
