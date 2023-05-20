@@ -175,15 +175,17 @@ Line 영역 - 선
     }
 
     #line01 {
+        border-top: 1.5px solid rgb(78, 78, 78);
         width: 245px;
     }
 
     #line02 {
+        border-top: 1.5px solid rgb(78, 78, 78);
         width: 380px;
     }
 
     #navmenu {
-        right: 130px;
+        right: 50px;
         bottom: 100px;
 
     }
