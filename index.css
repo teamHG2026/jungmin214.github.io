@@ -112,8 +112,8 @@ Line 영역 - 선
         padding-bottom: 1px;
         width: 1005;
         left: 0;
-        font-size: 16px;
-        /* background-color: blueviolet; */
+        font-size: 17px;
+        /* background-color: blueviolet; */ 
     }
     
     
@@ -125,7 +125,7 @@ Line 영역 - 선
 
     
     #line01 {
-        top: 85px;
+        top: 88px;
         width: 100%;
     }
 
@@ -175,7 +175,7 @@ Line 영역 - 선
 
     
     #line01 {
-        top: 85px;
+        top: 88px;
         width: 100%;
     }
 
