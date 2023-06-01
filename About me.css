@@ -356,13 +356,13 @@ input[type="checkbox"]{
     }
 
     #title {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
+        width: 270px;
+        text-align: left;
         padding-top: 5px;
         padding-bottom: 1px;
-        left: 5px;
+        left: 21%;
         font-size: 15px;
+        /* background-color: bisque; */
     }
 
     #navmenu {
