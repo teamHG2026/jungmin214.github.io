@@ -379,6 +379,21 @@ Line 영역 - 선
         display: none;
     }
 
+    #navmenu {
+        flex-direction: row;
+        top: 18px;
+        right: 0;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    #navmenu p {
+        font-size: 18px;
+        padding: 0 20px;
+    
+    }
+
     #picture01 {
         justify-content: center;
         width: 410px;
@@ -584,7 +599,103 @@ Line 영역 - 선
     .button {
         width: 170px;
         height: 45px;
-        top: 3300px;
+        top: 355%;
+        left: 29%;
+        /* background-color: aqua; */
+        border: solid 3px white;
+        border-radius: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #title {
+        text-align: center;
+        font-size: 46px;
+        top: 20px;
+        left: 14%;
+    }
+
+    #picture01 {
+        justify-content: center;
+        width: 290px;
+        height: 290px;
+        top: 1000px;
+        left: 10%;
+       /* background-color: blueviolet; */
+    }
+
+    #picture01 p {
+        font-size: 10.5px;
+    }
+
+    #picture01_1 {
+        width: 290px;
+        height: 290px;
+        top: 1000px;
+        left: 10%;
+    }
+
+    #picture02 {
+        width: 290px;
+        height: 290px;
+        top: 1450px;
+        left: 10%;
+    }
+
+    #picture02 p {
+        font-size: 10.5px;
+        text-align: left;
+    }
+
+    #picture02_2 {
+        width: 290px;
+        height: 290px;
+        top: 1450px;
+        left: 10%;
+    }
+
+    #picture03 {
+        width: 290px;
+        height: 290px;
+        top: 1900px;
+        left: 10%;
+    }
+
+    #picture03 p {
+        font-size: 10.5px;
+    }
+
+    #picture03_3 {
+        width: 290px;
+        height: 290px;
+        top: 1900px;
+        left: 10%;
+    }
+
+    #picture04 {
+        width: 290px;
+        height: 290px;
+        top: 2350px;
+        left: 10%;
+    }
+
+    #picture04 p {
+        font-size: 10.5px;
+        text-align: left;
+    }
+
+    #picture04_4 {
+        width: 290px;
+        height: 290px;
+        top: 2350px;
+        left: 10%;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .button {
+        top: 540%;
         left: 29%;
         /* background-color: aqua; */
         border: solid 3px white;
