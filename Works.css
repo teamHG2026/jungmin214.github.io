@@ -10,13 +10,25 @@
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 100;
-    height: 3900px;
+    height: 4600px;
     background-color: rgb(0, 0, 0);
 }
 
 /* -----------------------------------------------------------------------
 header 영역 - 로고, 메인메뉴
 ----------------------------------------------------------------------- */
+
+#header_box{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: solid 1.5px rgb(78, 78, 78);
+    z-index: 10000; 
+}
 
 #header {
     position: fixed;
@@ -67,7 +79,7 @@ header 영역 - 로고, 메인메뉴
     font-size: 90px;
     color: white;
     top: 20px;
-    left: 580px;
+    left: 30%;
     text-align: center;
     /* background-color: aquamarine; */
 }
@@ -79,9 +91,10 @@ Line 영역 - 선
 #line01 {
     position: fixed;
     border-right: 1.5px solid rgb(78, 78, 78);
-    width: 1570px;
+    width: 93%;
     height: 312px;
     top: 0;
+    z-index: 10000;
 }
 
 
@@ -150,7 +163,7 @@ Line 영역 - 선
     color: white;
     width: 440px;
     height: 440px;
-    top: 1678px;
+    top: 1920px;
     right: 338px;
 
     /* background-color: rgb(120, 150, 130); */
@@ -178,7 +191,7 @@ Line 영역 - 선
     background-color: rgb(0, 0, 0, 0);
     width: 440px;
     height: 440px;
-    top: 1678px;
+    top: 1920px;
     right: 338px;
     border-radius: 30px;
 }
@@ -208,7 +221,7 @@ Line 영역 - 선
     color: white;
     width: 440px;
     height: 440px;
-    top: 2028px;
+    top: 2513px;
     left: 321px;
 
     /* background-color: rgb(235, 215, 250); */
@@ -235,7 +248,7 @@ Line 영역 - 선
     background-color: rgba(0, 0, 0, 0);
     width: 440px;
     height: 440px;
-    top: 2028px;
+    top: 2513px;
     left: 321px;
     border-radius: 30px;
 }
@@ -264,7 +277,7 @@ Line 영역 - 선
     color: white;
     width: 440px;
     height: 440px;
-    top: 2379px;
+    top: 3106px;
     right: 338px;
 
     /* background-color: rgb(150, 150, 120); */
@@ -292,7 +305,7 @@ Line 영역 - 선
     background-color: rgba(0, 0, 0, 0);
     width: 440px;
     height: 440px;
-    top: 2379px;
+    top: 3106px;
     right: 338px;
     border-radius: 30px;
 }
@@ -339,42 +352,141 @@ Line 영역 - 선
     align-items: center;
     width: 200px;
     height: 70px;
-    top: 3680px;
-    left: 740px;
+    top: 4370px;
+    left: 40%;
     /* background-color: aqua; */
     border: solid 3px white;
     border-radius: 100px;
 }
+
+@media screen and (max-width: 1115px) {
+    body {
+        height: 4100px;
+    }
+
+    #header_box{
+        display: block;
+    }
+
+    #title {
+    text-align: center;
+    font-size: 70px;
+    top: 20px;
+    left: 20%;
+    }
+
+    #line01 {
+        display: none;
+    }
+
+    #picture01 {
+        justify-content: center;
+        width: 410px;
+        height: 410px;
+        top: 1000px;
+        left: 19%;
+       /* background-color: blueviolet; */
+    }
+
+    #picture01 p {
+        font-size: 15px;
+    }
+
+    #picture01_1 {
+        width: 410px;
+        height: 410px;
+        top: 1000px;
+        left: 19%;
+    }
+
+    #picture02 {
+        width: 410px;
+        height: 410px;
+        top: 1590px;
+        left: 19%;
+    }
+
+    #picture02 p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    #picture02_2 {
+        width: 410px;
+        height: 410px;
+        top: 1590px;
+        left: 19%;
+    }
+
+    #picture03 {
+        width: 410px;
+        height: 410px;
+        top: 2180px;
+        left: 19%;
+    }
+
+    #picture03 p {
+        font-size: 15px;
+    }
+
+    #picture03_3 {
+        width: 410px;
+        height: 410px;
+        top: 2180px;
+        left: 19%;
+    }
+
+    #picture04 {
+        width: 410px;
+        height: 410px;
+        top: 2770px;
+        left: 19%;
+    }
+
+    #picture04 p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    #picture04_4 {
+        width: 410px;
+        height: 410px;
+        top: 2770px;
+        left: 19%;
+    }
+
+    .button {
+        width: 170px;
+        height: 45px;
+        top: 3800px;
+        left: 35%;
+        /* background-color: aqua; */
+        border: solid 3px white;
+        border-radius: 100px;
+    }
+
+}
+
+
 
 @media screen and (max-width: 590px) {
     body {
         height: 3800px;
     }
 
+    #header_box{
+        display: block;
+    }
+
     #title {
-    width: 100%;
     text-align: center;
-    margin: 0 auto;
     font-size: 46px;
     top: 20px;
-    left: 0;
+    left: 20%;
     }
 
     #line01 {
-        border-top: 1.5px solid rgb(78, 78, 78);
-        width: 100%;
-        height: 0;
-        left: 0;
-        top: 55px;
-    }
-
-    #navmenu {
-        right: 48px;
-    }
-    
-
-    #navmenu a {
-        font-size: 18px;
+        display: none;
     }
 
     #picture01 {
@@ -473,7 +585,7 @@ Line 영역 - 선
         width: 170px;
         height: 45px;
         top: 3300px;
-        left: 31%;
+        left: 29%;
         /* background-color: aqua; */
         border: solid 3px white;
         border-radius: 100px;

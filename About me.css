@@ -9,6 +9,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
 
+:root {
+    --primary-color: rgb(181, 44, 44);
+    --primary-bg-color: #000000;
+}
+
+
+
+html {
+    scroll-behavior: smooth; /* 스크롤 시 부드럽게 이동 */
+}
+
+
 body {
     margin: 0; padding: 0;
     background-color: rgb(0, 0, 0);
@@ -217,155 +229,130 @@ Line 영역 - 선
     /* border: solid 1px #000; */
 }
 
-/* 일단 지워놔............
-
-@media screen and (max-width: 960px) {
-    #line02 {
-        width: 200px;
-    }
-
-    #title {
-        font-size: 28px;
-        left: 230px;
-        top: 5px;
-    }
-
-    #navmenu {
-        bottom: 5%;
-        left: 55px;
-        padding-left: 2%;
-    }
-
-    #Pro {
-        right: 55px;
-    }
-
-    #P_content01 {
-        right: 55px;
-    }
-
-    #P_content02 {
-        right: 55px;
-    }
-
-    #P_content03 {
-        left: 340px;
-    }
-
-    #picture01 {
-        height: 30%;
-    }
-
-    #picture02 {
-        left: 265px;
-    }
-
-    #picture03 {
-        left: 265px;
-    }
-
-    #picture04 {
-        left: 265px;
-    }
-
-    #picture05 {
-        left: 265px;
-    }
-
-    #picture06 {
-        left: 265px;
-    }
+/* 햄버거 메뉴 아이콘 */
+.menu-btn{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 30%;
+    width: 40%;
+    border-bottom: 2px solid #ffffff;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btn:before{
+    transform: translateY(-8px);
+}
+.menu-btn:after{
+    transform: translateY(8px);
 }
 
-@media screen and (max-width: 792px) {
-    #title {
-        font-size: 25px;
-        left: 230px;
-        top: 15px;
-    }
-
-    #Pro {
-        font-size: 35px;
-        top: 170px;
-    }
-
-    #P_content01 {
-        font-size: 18px;
-    }
-
-    #P_content02 {
-        font-size: 16px;
-    }
-
-    #P_content03 {
-        font-size: 28px;
-    }
-
-    #picture01 {
-        height: 28%;
-    }
-
-    #picture02 {
-        height: 6.5%;
-        left: 260px;
-        top: 456px;
-    }
-
-    #picture03 {
-        height: 5.5%;
-        left: 264px;
-        top: 525px;
-    }
-
-    #picture04 {
-        height: 5.5%;
-        left: 264px;
-        top: 589px;
-    }
-
-    #picture05 {
-        height: 5.5%;
-        left: 264px;
-        top: 655px;
-    }
-
-    #picture06 {
-        height: 5.5%;
-        left: 264px;
-        top: 720px;
-    }
+/* 닫기 아이콘 */
+.close {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: background .6s;
+}
+  
+#active:checked + .menu-btn span {
+    transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+    transform: rotate(45deg);
+    border-color: #fff;
+}
+#active:checked + .menu-btn:after {
+    transform: rotate(-45deg);
+    border-color: #fff;
 }
 
-@media screen and (max-width: 792px) {
-    #title {
-        font-size: 25px;
-        left: 230px;
-        top: 0px;
-    }
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: var(--primary-bg-color);
+    transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+    left:0;
 }
 
-@media screen and (max-width: 732px) {
-    #title {
-        font-size: 25px;
-        left: 15px;
-        top: 16px;
-    }
+#active:checked + .menu-btn span {
+	transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+	transform: rotate(45deg);
+    border-color: #ffffff;
+}
+#active:checked + .menu-btn:after {
+	transform: rotate(-45deg);
+    border-color: #ffffff;
 }
 
-*/
+.wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    padding-top: 80px;
+    list-style: none;
+    text-align: center;
+}
+.wrapper ul li{
+    width: 200px;
+    height: 60px;
+}
+.wrapper ul li a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    top: 100px;
+    font-size: 23px;
+    color: #ffffff;
+}
+.wrapper ul li a:hover{
+    color: var(--primary-color);
+   /* text-decoration: underline; */
+}
 
-@media screen and (max-width: 590px) {
+/* 체크박스 숨기기 */
+input[type="checkbox"]{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1015px) {
+    
     #line01 {
         top: 85px;
         width: 100%;
     }
 
     #line02 {
-        border-top: 1.5px solid rgb(78, 78, 78);
-        width: 100%;
-        height: 0;
-        left: 0;
-        top: 130px;
+        width: 80px;
+        height: 86px;
     }
 
     #title {
@@ -379,15 +366,14 @@ Line 영역 - 선
     }
 
     #navmenu {
-        top: 160px;
-        left: 375px;
+        display: none;
+        transform: translateX(-50%);
+        flex-direction: row;
+        column-gap: 70px;
+        top: 98px;
+        left: 70px;
         padding-left: 2%;
     }
-
-    #navmenu a {
-        font-size: 19px;
-    }
-
 
     #Pro {
         font-size: 29px;
@@ -446,5 +432,9 @@ Line 영역 - 선
         height: 5.2%;
         left: 19px;
         top: 612px;
+    }
+
+    .menu-btn {
+        display: block;
     }
 }
