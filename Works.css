@@ -26,7 +26,7 @@ header 영역 - 로고, 메인메뉴
     width: 100%;
     height: 48px;
     background-color: rgb(0, 0, 0);
-    border-bottom: solid 1.5px rgb(78, 78, 78);
+    border-bottom: solid 1.5px rgb(182 182 182);
     z-index: 10000; 
 }
 
@@ -58,7 +58,7 @@ header 영역 - 로고, 메인메뉴
 }
 /* #navmenu 요소에 포함된 a 태그 스타일 설정 */
 #navmenu a {
-    color: rgb(122, 122, 122);
+    color: rgb(182 182 182);
     font-size: 22px;
 }
 #navmenu a:link {
@@ -359,9 +359,9 @@ Line 영역 - 선
     border-radius: 100px;
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1125px) {
     body {
-        height: 4200px;
+        height: 4150px;
     }
 
     #header_box{
@@ -473,7 +473,7 @@ Line 영역 - 선
     .button {
         width: 170px;
         height: 45px;
-        top: 3800px;
+        top: 400%;
         left: 35%;
         /* background-color: aqua; */
         border: solid 3px white;
@@ -616,6 +616,15 @@ Line 영역 - 선
         left: 14%;
     }
 
+    #navmenu {
+        flex-direction: row;
+        top: 18px;
+        right: 0;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
     #picture01 {
         justify-content: center;
         width: 290px;
@@ -693,12 +702,3 @@ Line 영역 - 선
     }
 }
 
-@media screen and (max-height: 660px) {
-    .button {
-        top: 540%;
-        left: 29%;
-        /* background-color: aqua; */
-        border: solid 3px white;
-        border-radius: 100px;
-    }
-}
