@@ -359,10 +359,10 @@ input[type="checkbox"]{
         width: 100%;
         text-align: center;
         margin: 0 auto;
-        padding-top: 1px;
+        padding-top: 5px;
         padding-bottom: 1px;
-        left: 0;
-        font-size: 17px;
+        left: 5px;
+        font-size: 15px;
     }
 
     #navmenu {
