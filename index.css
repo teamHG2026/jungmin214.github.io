@@ -140,6 +140,8 @@ Line 영역 - 선
     #line01 {
         top: 88px;
         width: 100%;
+
+        animation-duration: 2s;
     }
 
     #line02 {
