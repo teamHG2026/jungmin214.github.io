@@ -111,8 +111,9 @@ Line 영역 - 선
     height: 47%;
     bottom: 8%;
     right: 0;
-
     /* background-color: antiquewhite; */
+
+    animation-duration: 2s;
 }
 
 
