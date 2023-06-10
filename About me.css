@@ -56,6 +56,8 @@ header 영역 - 로고, 메인메뉴
     row-gap: 16px;
     text-align: right;
     /* background-color: blueviolet; */
+
+    animation-duration: 3s;
 }
 #navmenu p {
     font-family: 'Inter', sans-serif;
@@ -152,6 +154,8 @@ Line 영역 - 선
     width: 100%;
     top: 145px;
     left: 0;
+
+    animation-duration: 2s;
 }
 
 #line02 {
@@ -160,6 +164,8 @@ Line 영역 - 선
     width: 360px;
     height: 100%;
     top: 0;
+
+    animation-duration: 2s;
 }
 
 /* -----------------------------------------------------------------------
@@ -176,8 +182,9 @@ Line 영역 - 선
     bottom: 6%;
     right: 0;
     z-index: -10000;
-
     /* background-color: antiquewhite; */
+
+    animation-duration: 2s;
 }
 
 #picture02 {

@@ -7,8 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600&display=swap');
 
 body {
+
     font-weight: 100;
     background-color: rgb(0, 0, 0);
+    cursor: url("Image/Illustrator.png") auto;
 }
 
 /* -----------------------------------------------------------------------
@@ -32,6 +34,8 @@ header 영역 - 로고, 메인메뉴
     row-gap: 15px;
     text-align: right;
     /* background-color: rgb(0, 0, 0); */
+
+    animation-duration: 3s;
 }
 #navmenu p {
     font-family: 'Inter', sans-serif;
@@ -80,6 +84,8 @@ Line 영역 - 선
     width: 680px;
     top: 195px;
     left: 0;
+
+    animation-duration: 2s;
 }
 
 #line02 {
@@ -88,6 +94,8 @@ Line 영역 - 선
     width: 93%;
     height: 312px;
     top: 0;
+
+    animation-duration: 2s;
 }
 
 /* -----------------------------------------------------------------------
