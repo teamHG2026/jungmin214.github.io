@@ -350,23 +350,6 @@ Line 영역 - 선
     /* border: solid 1px #000; */ 
 } 
 
-.button {
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    color: white;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 70px;
-    top: 4370px;
-    left: 40%;
-    /* background-color: aqua; */
-    border: solid 3px white;
-    border-radius: 100px;
-}
-
 @media screen and (max-width: 1125px) {
     body {
         height: 4150px;
@@ -479,16 +462,6 @@ Line 영역 - 선
         height: 410px;
         top: 2770px;
         left: 19%;
-    }
-
-    .button {
-        width: 170px;
-        height: 45px;
-        top: 400%;
-        left: 35%;
-        /* background-color: aqua; */
-        border: solid 3px white;
-        border-radius: 100px;
     }
 
 }
@@ -606,16 +579,6 @@ Line 영역 - 선
     .text_004 {
         font-size: 15px;
     }
-
-    .button {
-        width: 170px;
-        height: 45px;
-        top: 355%;
-        left: 29%;
-        /* background-color: aqua; */
-        border: solid 3px white;
-        border-radius: 100px;
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -711,5 +674,5 @@ Line 영역 - 선
         top: 2350px;
         left: 10%;
     }
-}
 
+}
