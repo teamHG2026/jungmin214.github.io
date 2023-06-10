@@ -486,6 +486,8 @@ Line 영역 - 선
 
     #line01 {
         display: none;
+
+        animation-duration: 2s;
     }
 
     #picture01 {
